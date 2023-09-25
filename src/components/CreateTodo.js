@@ -5,6 +5,7 @@ import { Addtodo } from "../utils/helper";
 import { useState } from "react";
 import { addTodo } from "../utils/todoSlice";
 
+
 const CreateTodo = () => {
   const dispatch = useDispatch();
   const [title,setTitle]=useState("")
@@ -13,7 +14,8 @@ const CreateTodo = () => {
 
   return (
     <div
-      className="flex flex-col w-1/2 h-max p-4  rounded-md text-white bg-gray-800 "
+    
+      className="flex flex-col w-max  h-max p-4 absolute top-10 bottom-30    rounded-md text-white bg-gray-900 "
     >
       <button
         className="text-red-800 hover:text-white font-semibold text-2xl "
@@ -21,7 +23,9 @@ const CreateTodo = () => {
       >
         <RxCross2 />
       </button>
-      <form onSubmit={(e)=>Addtodo(e,{title,description},dispatch,addTodo,setDescription,setTitle)} className="  flex flex-col items-center gap-4 w-full h-full ">
+      <form onSubmit={(e)=>{
+        Addtodo(e,{title,description},dispatch,addTodo,setDescription,setTitle,toggleCreatePopup)
+       }} className="  flex flex-col items-center gap-4 w-full h-full ">
         <h1>Create a Todo </h1>
         <div className="flex gap-2 ">
           <div className="flex flex-col  gap-2">

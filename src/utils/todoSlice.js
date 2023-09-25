@@ -6,7 +6,8 @@ const todoSlice=createSlice({
     name:"todo",
     initialState:{
         todos:[],
-        importantTodos:[]
+        importantTodos:[],
+        deletedTodos:[]
     },
     reducers:{
         addTodo:(state,action)=>{
@@ -19,9 +20,17 @@ const todoSlice=createSlice({
             state.importantTodos=[...state.importantTodos,Todo]
             const filteredTodo=state.todos.filter((todo)=>Todo.id!==todo.id)
             state.todos=filteredTodo
+        },
+        toggleDeleted:(state,action)=>{
+            const index=state.todos.findIndex(todo=>todo.id===action.payload.id)
+            state.todos.at(index).isDeleted=true
+            const Todo=state.todos.at(index)
+            state.deletedTodos=[...state.deletedTodos,Todo]
+            const filteredTodo=state.todos.filter((todo)=>Todo.id!==todo.id)
+            state.todos=filteredTodo
         }
     }
 })
 
-export const {addTodo, toggleImportant}=todoSlice.actions
+export const {addTodo, toggleImportant, toggleDeleted}=todoSlice.actions
 export default todoSlice.reducer

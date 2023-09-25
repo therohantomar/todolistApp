@@ -1,6 +1,6 @@
-export const Addtodo=(e,task,dispatch,addTodo,setDescription,setTitle)=>{
+export const Addtodo=(e,task,dispatch,addTodo,setDescription,setTitle,toggleCreatePopup)=>{
 e.preventDefault()
-
+dispatch(toggleCreatePopup())
 setTitle("")
 setDescription("")
 const newDate=new Date().toString()
