@@ -15,7 +15,7 @@ function TaskContainer() {
         {isOpen ? <Sidebar /> : null}
         <Outlet />
         {isCreatePopupOpen ? (
-          <div className="h-full bg-black flex items-center justify-center text-white absolute top-0 botton-0 left-0 right-0 opacity-90 ">
+          <div data-testid="Popup" className="h-full bg-black flex items-center justify-center text-white absolute top-0 botton-0 left-0 right-0 opacity-90 ">
             <CreateTodo />
           </div>
         ) : null}
