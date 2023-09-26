@@ -9,4 +9,17 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: "Martian";
+    src: url("../public//fonts/MartianMono-VariableFont_wdth\,wght.ttf");
+}
 
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../public//fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../public//fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf");
+}
