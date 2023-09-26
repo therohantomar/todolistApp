@@ -23,12 +23,12 @@ git clone [repository_url]
 
 Navigate to the project directory:
 bash
-```
+
 cd todolist-app
 ```
 
 Install the dependencies:
-```bash
+bash
 
 npm install
 ```
