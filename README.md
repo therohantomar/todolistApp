@@ -17,24 +17,23 @@ To run this TodoList App locally on your machine, follow these steps:
 
     Clone this GitHub repository:
 
-bash
+
 git clone [repository_url]
 
 
 Navigate to the project directory:
-bash
+
 
 cd todolist-app
 
 
 Install the dependencies:
-bash
-
+ 
 npm install
 
 
 Start the development server:
-bash
+
 
     npm start
 
