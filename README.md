@@ -11,34 +11,6 @@ Utilization of React Redux and Redux Toolkit for state management
 Styling and customization with Tailwind CSS
 Icon library from React Icons for visually appealing UI
 
-## ⚙️ Installation
-
-To run this TodoList App locally on your machine, follow these steps:
-
-    Clone this GitHub repository:
-
-
-git clone [repository_url]
-
-
-Navigate to the project directory:
-
-
-cd todolist-app
-
-
-Install the dependencies:
- 
-npm install
-
-
-Start the development server:
-
-
-    npm start
-
-
- Open your browser and visit http://localhost:3000 to access the TodoList App.
 
 ## 🚀 Technologies Used
 
