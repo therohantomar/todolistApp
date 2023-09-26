@@ -14,11 +14,10 @@ const CreateTodo = () => {
 
   return (
     <div
-    
       className="flex flex-col w-max  h-max p-4 absolute top-10 bottom-30    rounded-md text-white bg-gray-900 "
     >
       <button
-        className="text-red-800 hover:text-white font-semibold text-2xl "
+        className="text-yellow-500 hover:text-white font-semibold text-2xl "
         onClick={() => dispatch(toggleCreatePopup())}
       >
         <RxCross2 />
@@ -41,7 +40,7 @@ const CreateTodo = () => {
           </label>
           <textarea value={description} required rows={4} onChange={(e)=>setDescription(e.target.value)} className="p-2  rounded-md w-64 text-gray-800" name="taskDescription" />
         </div>
-        <input type="Submit" value="Add Todo"   className="w-64 rounded-md bg-white text-gray-800 py-2 my-4 " />
+        <input type="submit" value={"Add ToDo"}    className="w-64 rounded-md bg-white text-gray-800 cursor-pointer py-2 my-4 " />
       </form>
     </div>
   );

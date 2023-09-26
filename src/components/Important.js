@@ -9,8 +9,10 @@ function Important() {
   if (todos.length === 0)
   return (
     <div className="flex gap-2 flex-col mx-4 flex-wrap items-center justify-center  sm:mx-20 md:mx-20 lg:mx-40 xl:mx-60 2xl:mx-60 p-4 h-[95vh]">
-      <h1 className="font-bold sm:text-xl md:text-xl lg:text-xl  xl:text-4xl 2xl:text-4xl text-yellow-500">Select From Alltask's</h1>
-      <button className="px-4 py-2 sm:text-md md:text-md lg:text-md  xl:text-xl 2xl:text-xl font-bold bg-yellow-500 my-2 rounded-md text-white"><Link to="/" >Redirect to Alltask</Link></button>
+      <div className="absolute top-1/2 left-1/2 right-1/2 bottom-1/2 z-0 -translate-x-1/2 -translate-y-1/2">
+      <h1 className="font-bold sm:text-xl md:text-xl lg:text-xl  w-max xl:text-4xl 2xl:text-4xl text-yellow-500">Select From Alltask's</h1>
+      <button className="px-4 py-2 sm:text-md md:text-md lg:text-md w-max  xl:text-xl 2xl:text-xl font-bold bg-yellow-500 my-2 rounded-md text-white"><Link to="/" >Redirect to Alltask</Link></button>
+   </div> 
     </div>
   );
   return (
